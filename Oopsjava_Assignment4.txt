@@ -1,0 +1,91 @@
+Q1.
+package cdac.mumbai.in;
+import java.util.Scanner;
+
+class Student1{
+	int id;
+	int rollno;
+	float fee;
+	
+	void acceptRecord( ) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("id : ");
+		this.id = sc.nextInt();
+		System.out.print("rollno : ");
+		this.rollno = sc.nextInt();
+		System.out.print("id : ");
+		this.fee = sc.nextFloat();
+		
+	}
+	void printRecord( ) {
+		System.out.printf("%-10d%-10d%f",this.id,this.rollno,this.fee);
+		//todo
+	}
+}
+
+public class Student {
+
+	public static void main(String[] args) {
+		Student1 st = new Student1();
+		st.acceptRecord( );
+		st.printRecord( );
+
+	}
+
+}
+
+
+Q2.
+package cdac.mumbai.in;
+
+class Zeep{
+	String name;
+	String colour;
+	int prize;
+	
+	
+	public void displayInfo(String name,String colour, int prize){
+		System.out.printf("%-10s%-10s%-20d",name,colour,prize);
+	}
+}
+
+public class Vehicle {
+
+	public static void main(String[] args) {
+		Zeep sc = new Zeep();
+		sc.displayInfo("Swift","Red",0);
+		sc.displayInfo("Swift","Red",400000);
+
+	}
+
+}
+Q3.
+
+package cdac.mumbai.in;
+
+class Employee{
+	String name;
+	float salary;
+	int empid;
+	int age;
+
+public void displayinfo(String name,float salary,int empid) {
+	System.out.printf("%-10s%-10f%-20d/n",name,salary,empid);
+}
+public void displayinfo(float salary,String name,int age) {
+	System.out.printf("%-10s%-10f%-20d",salary,age,name);
+}
+
+}
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Employee emp = new Employee();
+       emp.displayinfo("harshad",60000,8539);
+       emp.displayinfo("harshad",60000,25);
+	}
+
+}
